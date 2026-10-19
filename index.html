@@ -1,0 +1,469 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Kit IA para Estética | 40 prompts, roteiros e calendário para divulgar sua clínica</title>
+<meta name="description" content="40 prompts escritos para quem trabalha com estética, 10 roteiros de Reels e calendário de 30 dias. Funciona no ChatGPT grátis. Garantia de 7 dias.">
+<meta property="og:title" content="Kit IA para Estética">
+<meta property="og:description" content="Seus posts, anúncios e respostas de WhatsApp prontos em minutos. 40 prompts para quem trabalha com estética.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://lucaszone36-jpg.github.io/kit-ia-estetica/">
+<meta property="og:image" content="https://lucaszone36-jpg.github.io/kit-ia-estetica/img/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&display=swap" rel="stylesheet">
+<style>
+:root{
+  --papel:#fbf7f3;--creme:#f4ece4;--tinta:#2a2320;--suave:#6e625b;--linha:#e6dbd2;
+  --argila:#b4655a;--argila-esc:#954f45;--salvia:#55705b;--salvia-clara:#e7eee7;--noite:#2a2320;
+  --serif:"Fraunces",Georgia,"Times New Roman",serif;--sans:"Segoe UI",system-ui,-apple-system,Roboto,sans-serif;
+  --raio:18px;--sombra:0 18px 40px -18px #4a2a2040;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;background:var(--papel);color:var(--tinta);font:17px/1.6 var(--sans);-webkit-font-smoothing:antialiased}
+body{margin:0}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--argila-esc)}
+:focus-visible{outline:3px solid var(--salvia);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+.estreito{max-width:760px}
+section{padding:72px 0}
+h1,h2,h3{font-family:var(--serif);font-weight:650;letter-spacing:-.01em;line-height:1.1;margin:0 0 16px}
+h2{font-size:clamp(28px,4.4vw,42px)}
+h3{font-size:22px}
+p{margin:0 0 14px}
+.leve{color:var(--suave)}
+.pequeno{font-size:14px;color:var(--suave)}
+
+/* Barra de lançamento */
+.lanc{background:var(--salvia);color:#fff;text-align:center;font-size:15px;padding:9px 16px}
+.lanc b{font-weight:700}
+
+/* Botões */
+.cta{display:inline-flex;align-items:center;justify-content:center;gap:.3em;background:var(--argila-esc);color:#fff;text-decoration:none;font-weight:650;font-size:18px;padding:18px 30px;border-radius:14px;box-shadow:0 10px 24px -10px #b4655a99;transition:transform .2s,box-shadow .2s,background .2s;min-height:56px;text-align:center}
+.cta:hover{transform:translateY(-2px);background:#7d4038;box-shadow:0 16px 30px -12px #954f45aa}
+.cta.grande{font-size:20px;padding:22px 40px;width:100%;max-width:460px}
+.cta[aria-busy="true"]{opacity:.8;pointer-events:none}
+.cta-bloco{margin-top:26px}
+.cta-bloco .pequeno{margin-top:10px}
+
+/* Hero */
+.hero{padding:44px 0 56px}
+.hero .grade{display:grid;grid-template-columns:1.05fr 1fr;gap:48px;align-items:center}
+.selo-topo{display:inline-block;font-size:14px;color:var(--salvia);background:var(--salvia-clara);border-radius:999px;padding:6px 14px;margin-bottom:18px}
+.hero h1{font-size:clamp(32px,4.2vw,46px)}
+.hero .sub{font-size:19px;color:var(--suave);max-width:56ch}
+.hero-img{border-radius:24px;box-shadow:var(--sombra);width:100%;height:auto;animation:entra 1s cubic-bezier(.2,.8,.2,1) both}
+@keyframes entra{from{opacity:0;transform:translateY(16px) scale(.98)}}
+.selos{display:flex;flex-wrap:wrap;gap:10px 18px;margin-top:22px;padding:0;list-style:none;font-size:15px}
+.selos li{display:flex;align-items:center;gap:8px}
+.selos svg{width:20px;height:20px;flex:none;color:var(--salvia)}
+
+/* Prova */
+.prova{background:var(--noite);color:var(--papel);padding:34px 0}
+.prova ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,1fr);gap:16px;text-align:center}
+.prova b{display:block;font-family:var(--serif);font-size:clamp(30px,4vw,44px);color:#f0c9bf;line-height:1}
+.prova span{font-size:14px;color:#d9cdc5}
+.prova .pequeno{color:#b9aca4;text-align:center;margin:18px 0 0}
+
+/* Dor e desejo */
+.lista-dor{list-style:none;padding:0;margin:22px 0}
+.lista-dor li{background:#fff;border:1px solid var(--linha);border-radius:14px;padding:14px 18px 14px 50px;margin-bottom:10px;position:relative}
+.lista-dor li::before{content:"";position:absolute;left:18px;top:26px;width:16px;height:2px;background:var(--argila)}
+.destaque{font-family:var(--serif);font-size:22px;line-height:1.35;border-left:4px solid var(--argila);padding-left:18px;margin:26px 0}
+.desejo{background:var(--creme)}
+.dia{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:26px 0}
+.dia div{background:#fff;border-radius:var(--raio);padding:18px;border:1px solid var(--linha)}
+.dia b{display:block;color:var(--argila-esc);margin-bottom:6px}
+
+/* Demonstração */
+.demo .grade{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+.passo{margin-bottom:18px}
+.passo h3{font-size:18px;font-family:var(--sans);font-weight:700;margin-bottom:8px}
+.passo h3 span{display:inline-grid;place-items:center;width:28px;height:28px;border-radius:50%;background:var(--argila);color:#fff;font-size:14px;margin-right:8px}
+pre{background:#fff;border:1px solid var(--linha);border-left:4px solid var(--salvia);border-radius:12px;padding:14px 16px;font:14px/1.55 Consolas,"Cascadia Mono",monospace;white-space:pre-wrap;overflow-wrap:anywhere;margin:0}
+.resposta{background:var(--salvia-clara);border-radius:12px;padding:14px 18px;font-style:italic}
+.demo-img{border-radius:22px;box-shadow:var(--sombra);position:sticky;top:24px;width:100%;height:auto}
+
+/* Conteúdo */
+.tabela{width:100%;border-collapse:collapse;background:#fff;border-radius:var(--raio);overflow:hidden;box-shadow:0 1px 0 var(--linha)}
+.tabela th,.tabela td{padding:14px 16px;border-bottom:1px solid var(--linha);text-align:left;vertical-align:top}
+.tabela th{background:var(--creme);font-size:14px;color:var(--suave);font-weight:600}
+.tabela tfoot td{font-weight:700;background:var(--creme)}
+.tabela td:last-child{white-space:nowrap}
+@media(max-width:600px){.tabela thead{display:none}.tabela,.tabela tbody,.tabela tfoot,.tabela tr,.tabela td{display:block;width:100%}.tabela tr{padding:14px 16px;border-bottom:1px solid var(--linha)}.tabela td{border:0;padding:2px 0}.tabela td:last-child{color:var(--argila-esc);font-weight:600}}
+.calc{margin-top:22px;background:var(--noite);color:var(--papel);border-radius:var(--raio);padding:24px}
+.calc label{font-weight:600}
+.calc input{font:inherit;width:120px;padding:10px 12px;border-radius:10px;border:0;margin:0 6px}
+.calc output{display:block;margin-top:12px;font-family:var(--serif);font-size:24px;color:#f0c9bf}
+
+/* Autoridade */
+.padroes{counter-reset:p;display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:26px}
+.padroes article{background:#fff;border:1px solid var(--linha);border-radius:var(--raio);padding:22px}
+.padroes .num{font-family:var(--serif);font-size:46px;color:var(--argila);line-height:1}
+.padroes .fix{margin-top:12px;padding-top:12px;border-top:1px dashed var(--linha);font-size:15px;color:var(--salvia)}
+
+/* Comparação */
+.comp{width:100%;border-collapse:separate;border-spacing:0;font-size:15px}
+.comp th,.comp td{padding:14px;border-bottom:1px solid var(--linha);text-align:left}
+.comp thead th{font-family:var(--serif);font-size:18px}
+.comp .nosso{background:#fff;border-left:2px solid var(--argila);border-right:2px solid var(--argila)}
+.comp thead .nosso{border-top:2px solid var(--argila);border-radius:14px 14px 0 0;color:var(--argila-esc)}
+.comp tbody tr:last-child .nosso{border-bottom:2px solid var(--argila)}
+
+/* Bônus */
+.bonus{background:var(--creme)}
+.bonus .grade{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.etiqueta{display:inline-block;background:var(--argila-esc);color:#fff;border-radius:8px;padding:4px 10px;font-size:13px;font-weight:700;letter-spacing:.02em}
+.bump{margin-top:18px;border:1px dashed var(--salvia);border-radius:14px;padding:14px 16px;font-size:15px;background:#fff}
+
+/* Preço */
+.preco{background:var(--noite);color:var(--papel);text-align:center}
+.preco h2{color:#fff}
+.ancora{max-width:560px;margin:24px auto;text-align:left;border-collapse:collapse;width:100%}
+.ancora td{padding:12px 4px;border-bottom:1px solid #4a3f3a}
+.ancora td:last-child{text-align:right;white-space:nowrap}
+.ancora .riscado{text-decoration:line-through;color:#b9aca4}.ancora .riscado small{text-decoration:none;display:inline-block}
+.valor{font-family:var(--serif);font-size:clamp(64px,10vw,96px);line-height:1;margin:18px 0 6px;color:#fff}
+.valor small{font-size:.32em;color:#d9cdc5;font-family:var(--sans)}
+.preco .pequeno{color:#cfc2ba}
+
+/* Garantia */
+.garantia{background:url(img/fundo.jpg) center/cover var(--salvia-clara)}
+.garantia .caixa{display:grid;grid-template-columns:auto 1fr;gap:34px;align-items:center;background:#ffffffd9;backdrop-filter:blur(4px);border-radius:24px;padding:34px}
+.selo-g{width:150px;height:150px;border-radius:50%;border:2px solid var(--salvia);display:grid;place-items:center;text-align:center;color:var(--salvia);font-family:var(--serif);line-height:1.1;padding:12px}
+.selo-g b{font-size:40px;display:block}
+
+/* Para quem */
+.pq{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.pq div{background:#fff;border:1px solid var(--linha);border-radius:var(--raio);padding:24px}
+.pq ul{padding-left:20px;margin:0}.pq li{margin-bottom:8px}
+.pq .nao{background:transparent}
+
+/* Objeções e FAQ */
+.obj{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.obj div{background:#fff;border-radius:var(--raio);padding:20px;border:1px solid var(--linha)}
+.obj b{display:block;font-family:var(--serif);font-size:19px;margin-bottom:8px}
+details{border-bottom:1px solid var(--linha);padding:16px 0}
+summary{cursor:pointer;font-weight:650;font-size:18px;list-style:none;display:flex;justify-content:space-between;gap:12px}
+summary::after{content:"+";color:var(--argila);font-size:24px;line-height:1}
+details[open] summary::after{content:"–"}
+summary::-webkit-details-marker{display:none}
+details p{margin:10px 0 0;color:var(--suave)}
+
+/* Final */
+.final{text-align:center;background:var(--creme)}
+.ps{max-width:620px;margin:28px auto 0;font-style:italic;color:var(--suave)}
+footer{padding:36px 0 36px;font-size:13px;color:var(--suave)}
+footer a{color:var(--suave)}
+
+/* Barra fixa (celular) */
+.fixa{position:fixed;left:0;right:0;bottom:0;z-index:20;display:flex;align-items:center;justify-content:space-between;gap:14px;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:#fffffff2;backdrop-filter:blur(10px);border-top:1px solid var(--linha);transform:translateY(110%);transition:transform .3s}
+.fixa.on{transform:none}
+.fixa .p{font-family:var(--serif);font-size:26px;line-height:1}.fixa .p small{display:block;font-family:var(--sans);font-size:12px;color:var(--suave)}
+.fixa .cta{padding:12px 22px;font-size:16px;min-height:48px;width:auto;flex:1 1 auto}.fixa .p{white-space:nowrap;flex:none}
+
+@media (max-width:880px){
+  section{padding:56px 0}
+  .hero .grade,.demo .grade,.bonus .grade{grid-template-columns:1fr;gap:28px}
+  .prova ul{grid-template-columns:repeat(2,1fr)}.prova li:first-child{grid-column:1/-1}
+  .dia,.padroes,.obj,.pq{grid-template-columns:1fr}
+  .demo-img{position:static}
+  .comp{font-size:14px;table-layout:fixed}.comp th,.comp td{padding:10px 6px;overflow-wrap:anywhere}.comp thead th{font-size:16px}
+  .garantia .caixa{grid-template-columns:1fr;text-align:center;justify-items:center;padding:26px}
+  .cta{width:100%}
+}
+@media (min-width:881px){.fixa{display:none}}
+@media (max-width:880px){footer{padding-bottom:110px}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<div class="lanc" data-lancamento><b>Preço de lançamento: R$ 37 até 31/10.</b> A partir de 01/11, o kit passa a custar R$ 47.</div>
+
+<main>
+<header class="hero">
+  <div class="wrap grade">
+    <div>
+      <span class="selo-topo">Para esteticistas, biomédicas estetas, fisios dermatofuncionais e donas de clínica</span>
+      <h1>Pare de travar na frente do celular. Seus posts, anúncios e respostas de WhatsApp saem prontos em minutos.</h1>
+      <p class="sub">40 prompts escritos para quem trabalha com estética, 10 roteiros de Reels e um calendário de 30 dias. Copie, cole no ChatGPT, no Claude ou no Gemini (funciona até na versão grátis) e publique.</p>
+      <div class="cta-bloco">
+        <a class="cta" href="#preco" data-checkout id="cta-hero">Quero meu kit por<span data-preco>R$ 37</span></a>
+        <p class="pequeno">Acesso na hora, por e-mail · Pix ou cartão · 7 dias para pedir o dinheiro de volta</p>
+      </div>
+      <ul class="selos">
+        <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19V5m5 14V9m5 10v-6m5 6V7"/></svg>Feito a partir de 428 anúncios reais</li>
+        <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l4 4L19 6"/></svg>Funciona na IA grátis</li>
+        <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l7 3v6c0 4-3 7-7 9-4-2-7-5-7-9V6z"/></svg>Garantia de 7 dias</li>
+      </ul>
+    </div>
+    <img class="hero-img" src="img/hero.webp" width="1168" height="880" alt="Capa do Kit IA para Estética em um tablet e uma página do kit aberta no celular" fetchpriority="high">
+  </div>
+</header>
+
+<div class="prova">
+  <div class="wrap">
+    <ul>
+      <li><b>428</b><span>anúncios de estética lidos na Biblioteca da Meta</span></li>
+      <li><b>50</b><span>clínicas de Curitiba analisadas uma a uma</span></li>
+      <li><b>40</b><span>prompts prontos</span></li>
+      <li><b>10</b><span>roteiros de Reels</span></li>
+      <li><b>30</b><span>dias de calendário</span></li>
+    </ul>
+    <p class="pequeno">Anúncios públicos e ativos, consultados em 19/10/2026. A Biblioteca de Anúncios da Meta é aberta: qualquer pessoa pode conferir.</p>
+  </div>
+</div>
+
+<section>
+  <div class="wrap estreito">
+    <h2>Você atende muito bem. O difícil é o resto.</h2>
+    <ul class="lista-dor">
+      <li>O último atendimento acaba às oito da noite e ainda falta pensar no post de amanhã.</li>
+      <li>Você abre o Instagram, olha a tela em branco e acaba repostando a mesma foto da sala.</li>
+      <li>Impulsionou um post, ganhou curtida e ninguém chamou no WhatsApp.</li>
+      <li>A cliente pergunta "quanto custa?", você responde o preço e ela some.</li>
+      <li>Já tentou o ChatGPT, mas o texto saiu genérico, com cara de robô e sem nada a ver com a sua clínica.</li>
+    </ul>
+    <p class="destaque">O problema não é falta de talento. Um pedido vago gera um texto vago. Um prompt bem escrito, com os dados da sua clínica, gera um texto que parece seu.</p>
+  </div>
+</section>
+
+<section class="desejo">
+  <div class="wrap">
+    <h2>Imagine abrir o celular e já saber o que postar hoje.</h2>
+    <div class="dia">
+      <div><b>De manhã</b>Você abre o calendário: hoje é dia de Reels, e o roteiro de 20 segundos já diz o que filmar em cada parte.</div>
+      <div><b>No intervalo</b>Uma cliente pergunta o preço. O prompt 22 responde mostrando o valor antes do número, sem enrolar.</div>
+      <div><b>Antes de impulsionar</b>Você cola o anúncio no prompt 5 e recebe nota de 0 a 10 e uma versão com oferta, prazo e botão.</div>
+      <div><b>Na sexta</b>Em 10 minutos, o prompt 34 resume a semana e diz qual é a próxima ação.</div>
+    </div>
+    <p class="destaque">Você continua sendo a especialista. A IA só faz a parte chata: o primeiro rascunho.</p>
+    <div class="cta-bloco"><a class="cta" href="#preco" data-checkout>Quero parar de travar para postar</a><p class="pequeno"><span data-preco-curto>R$ 37 até 31/10</span> · acesso imediato</p></div>
+  </div>
+</section>
+
+<section class="demo">
+  <div class="wrap grade">
+    <div>
+      <h2>Veja um prompt do kit funcionando.</h2>
+      <div class="passo"><h3><span>1</span>Você preenche a ficha da clínica uma vez</h3>
+<pre>Minha clínica: Studio Pele Leve. Cidade e bairro: Curitiba, Água Verde.
+Procedimento que mais quero vender: limpeza de pele.
+Público: mulheres de 28 a 45 anos que trabalham fora.
+Diferencial real: atendimento só com hora marcada.
+Tom de voz: acolhedor, sem gírias. Contato: WhatsApp.</pre></div>
+      <div class="passo"><h3><span>2</span>Cola o prompt 1 do kit</h3>
+<pre>[ficha] Escreva 10 ganchos de até 12 palavras para um anúncio de limpeza de pele.
+Cada gancho deve ser uma pergunta que a cliente ideal responde "sim".
+Não prometa resultado. Marque os 3 mais fortes e explique por quê.</pre></div>
+      <div class="passo"><h3><span>3</span>A IA devolve ganchos como estes</h3>
+        <div class="resposta">"Sai do trabalho e não tem tempo nem para cuidar da pele?"<br>"Gosta de atendimento com hora marcada, sem fila de espera?"<br>"Quer uma pausa de uma hora só para você no Água Verde?"</div>
+        <p class="pequeno">Exemplo ilustrativo com uma clínica fictícia. A resposta da IA muda a cada uso e depende dos dados da ficha.</p></div>
+      <p><b>São 40 prompts assim, cada um feito para uma situação da sua semana.</b></p>
+      <div class="cta-bloco"><a class="cta" href="#preco" data-checkout>Quero os 40 prompts</a><p class="pequeno">Funciona no ChatGPT grátis</p></div>
+    </div>
+    <img class="demo-img" src="img/uso.webp" loading="lazy" width="1168" height="880" alt="Imagem ilustrativa: celular com um assistente de IA escrevendo ganchos para um anúncio de limpeza de pele">
+  </div>
+</section>
+
+<section>
+  <div class="wrap estreito">
+    <h2>Tudo o que vem no kit</h2>
+    <table class="tabela">
+      <thead><tr><th>Parte</th><th>O que é</th><th>Tempo para criar do zero*</th></tr></thead>
+      <tbody>
+        <tr><td><b>10 prompts de anúncio</b></td><td>Ganchos, anúncio com oferta e prazo, revisor antes de impulsionar, público, leitura dos números</td><td>cerca de 3 h</td></tr>
+        <tr><td><b>10 prompts de conteúdo</b></td><td>Calendário, carrossel, bastidores, dúvidas frequentes, bio, destaques, legendas, palavras-chave locais</td><td>cerca de 3 h</td></tr>
+        <tr><td><b>10 prompts de WhatsApp</b></td><td>Primeira conversa, "quanto custa?", cliente que sumiu, "vou pensar", "achei caro", reativar clientes</td><td>cerca de 2 h</td></tr>
+        <tr><td><b>10 prompts de gestão</b></td><td>Preço com margem, meta do mês, relatório da semana, faltas, pacotes, parcerias no bairro</td><td>cerca de 2 h</td></tr>
+        <tr><td><b>10 roteiros de Reels</b></td><td>Gancho, miolo e chamada, prontos para gravar com o celular</td><td>cerca de 5 h</td></tr>
+        <tr><td><b>Calendário de 30 dias</b></td><td>O que postar em cada dia, em que formato e com que chamada</td><td>cerca de 15 h</td></tr>
+        <tr><td><b>Checklist de conformidade</b></td><td>Promessa, antes e depois, preço, prazo e rótulo de IA conferidos antes de publicar</td><td>cerca de 1 h</td></tr>
+      </tbody>
+      <tfoot><tr><td colspan="2">Total</td><td>cerca de 31 h</td></tr></tfoot>
+    </table>
+    <div class="calc">
+      <label for="hora">Quanto vale uma hora do seu atendimento? R$</label><input id="hora" type="number" min="1" inputmode="numeric" placeholder="ex.: 120">
+      <output id="calc-saida" aria-live="polite">Digite o valor da sua hora para ver a conta.</output>
+    </div>
+    <p class="pequeno">*Estimativa nossa do tempo para escrever e testar cada parte do zero. O seu tempo pode ser maior ou menor.</p>
+    <div class="cta-bloco"><a class="cta" href="#preco" data-checkout>Quero o kit por<span data-preco>R$ 37</span></a></div>
+  </div>
+</section>
+
+<section class="desejo">
+  <div class="wrap">
+    <h2>Antes de escrever uma linha, olhamos os anúncios que as clínicas pagam para rodar.</h2>
+    <p class="leve">Lemos 428 anúncios ativos de estética em Curitiba na Biblioteca de Anúncios da Meta e analisamos 50 clínicas uma a uma. Três padrões se repetiram:</p>
+    <div class="padroes">
+      <article><div class="num">33<small style="font-size:.45em;color:var(--argila-esc)"> de 50</small></div><h3>sem oferta concreta</h3><p>Falam do procedimento, mas não dão motivo para agendar agora.</p><p class="fix">O prompt 2 monta o anúncio com oferta e prazo reais.</p></article>
+      <article><div class="num">32<small style="font-size:.45em;color:var(--argila-esc)"> de 50</small></div><h3>sem preço nem próximo passo</h3><p>A pessoa se interessa e não sabe quanto custa nem o que fazer.</p><p class="fix">Os prompts 8 e 22 escrevem o botão e a resposta para "quanto custa?".</p></article>
+      <article><div class="num">11<small style="font-size:.45em;color:var(--argila-esc)"> de 50</small></div><h3>post comum impulsionado</h3><p>Hashtags e "link na bio": a pessoa precisa procurar o link sozinha.</p><p class="fix">O prompt 5 revisa o anúncio antes de você pagar.</p></article>
+    </div>
+    <p class="destaque">O kit nasceu desses erros: cada prompt foi escrito para evitar um deles.</p>
+    <div class="cta-bloco"><a class="cta" href="#preco" data-checkout>Quero o kit que corrige esses erros</a><p class="pequeno">Feito a partir de anúncios reais</p></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap estreito">
+    <h2>Três jeitos de resolver a divulgação</h2>
+    <div style="overflow-x:auto">
+    <table class="comp">
+      <thead><tr><td></td><th>Fazer sozinha do zero</th><th>Agência ou social media</th><th class="nosso">Kit IA para Estética</th></tr></thead>
+      <tbody>
+        <tr><th>Custo</th><td>Cerca de 31 h do seu tempo</td><td>Mensalidade recorrente, todo mês</td><td class="nosso"><b><span data-preco>R$ 37</span>, uma vez</b></td></tr>
+        <tr><th>Primeiro post</th><td>Dias, testando e errando</td><td>Semanas: briefing e contrato</td><td class="nosso">No mesmo dia</td></tr>
+        <tr><th>Feito para estética?</th><td>Sim</td><td>Depende</td><td class="nosso">Sim</td></tr>
+        <tr><th>A voz é sua?</th><td>Sim</td><td>Depende de quem escreve</td><td class="nosso">Sim, pela ficha da clínica</td></tr>
+        <tr><th>Regras de publicidade</th><td>Você pesquisa</td><td>Depende</td><td class="nosso">Checklist e revisor incluídos</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p class="pequeno">Agência é ótima para quem já pode pagar mensalidade; o kit é para quem quer fazer por conta própria, sem começar do zero.</p>
+    <div class="cta-bloco"><a class="cta" href="#preco" data-checkout>Quero o jeito mais rápido</a></div>
+  </div>
+</section>
+
+<section class="bonus" data-lancamento>
+  <div class="wrap grade">
+    <div>
+      <span class="etiqueta">Bônus · 50 primeiros compradores</span>
+      <h2 style="margin-top:14px">Raio-X dos anúncios de estética em Curitiba</h2>
+      <p>Os padrões que encontramos nas 50 clínicas, num guia curto: quanto tempo os anúncios ficam no ar, o que aparece na oferta, que botões são usados, os erros mais comuns e um checklist de 1 minuto para o seu anúncio. Nenhuma clínica é identificada.</p>
+      <p><b>Exclusivo do lançamento:</b> não será vendido separadamente. Quando a 50ª compra entrar, ele sai desta página.</p>
+    </div>
+    <img src="img/raiox.webp" loading="lazy" width="1168" height="880" alt="Capa do bônus Raio-X dos anúncios de estética e checklist aberto no tablet" style="border-radius:22px;box-shadow:var(--sombra)">
+  </div>
+</section>
+
+<section class="preco" id="preco">
+  <div class="wrap estreito">
+    <h2>Tudo o que você leva hoje</h2>
+    <table class="ancora">
+      <tr><td>Kit IA para Estética: 40 prompts, 10 roteiros de Reels, calendário de 30 dias e checklist</td><td data-riscado class="riscado">R$ 47 <small>a partir de 01/11</small></td></tr>
+      <tr data-lancamento><td>Bônus: Raio-X dos anúncios (50 primeiros)</td><td>exclusivo</td></tr>
+      <tr><td>Garantia de 7 dias com devolução de 100%</td><td>incluída</td></tr>
+    </table>
+    <p class="pequeno" data-lancamento>Seu preço até 31/10</p>
+    <div class="valor"><span data-preco>R$ 37</span> <small>pagamento único</small></div>
+    <p class="pequeno">Acesso na hora · sem mensalidade</p>
+    <div class="cta-bloco"><a class="cta grande" href="#preco" data-checkout data-final>Garantir o preço de lançamento</a>
+      <p class="pequeno">Pix ou cartão · o PDF chega no seu e-mail assim que o pagamento é aprovado</p>
+      <p class="pequeno" data-lancamento>Em 01/11 o preço sobe para R$ 47. Não é contagem regressiva falsa: é a data em que muda.</p></div>
+  </div>
+</section>
+
+<section class="garantia">
+  <div class="wrap estreito">
+    <div class="caixa">
+      <div class="selo-g"><div><b>7</b>dias<br><small>100% de volta</small></div></div>
+      <div>
+        <h2>Teste por 7 dias. Se não servir, o dinheiro volta inteiro.</h2>
+        <p>Compre, abra o PDF, cole os prompts e use na sua clínica. Se em até 7 dias achar que o kit não serve para você, por qualquer motivo, peça o reembolso pela Kiwify ou pelo e-mail <a href="mailto:lucaszone36@gmail.com">lucaszone36@gmail.com</a>. Devolvemos 100%, sem pergunta e sem formulário.</p>
+        <p class="pequeno">Esse prazo é um direito seu pelo Código de Defesa do Consumidor. A gente só faz questão de que pedir seja fácil.</p>
+        <a class="cta" href="#preco" data-checkout data-final>Quero testar o kit sem risco</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap estreito">
+    <div class="pq">
+      <div><h3>O kit é para você se…</h3><ul><li>Você é esteticista, biomédica esteta, fisio dermatofuncional ou tem uma clínica pequena.</li><li>Você mesma cuida do Instagram e do WhatsApp, ou quer começar.</li><li>Prefere fazer, mas quer um ponto de partida que não seja a tela em branco.</li></ul></div>
+      <div class="nao"><h3>Não é para você se…</h3><ul><li>Quer alguém que poste por você: nesse caso, uma agência faz mais sentido.</li><li>Procura garantia de clientes ou de faturamento. Ninguém sério promete isso.</li><li>Quer publicar antes e depois sem autorização.</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section class="desejo">
+  <div class="wrap">
+    <h2>"Mas e se…"</h2>
+    <div class="obj">
+      <div><b>"Não entendo nada de IA."</b>Se você sabe mandar mensagem no WhatsApp, sabe usar: copiar, colar e trocar o que está entre colchetes.</div>
+      <div><b>"Não tenho tempo."</b>É para isso. Você parte de um rascunho pronto e só ajusta.</div>
+      <div><b>"Fica com cara de robô."</b>Fica quando o pedido é genérico. A ficha dá à IA o seu bairro, o seu público e o seu tom.</div>
+      <div><b>"Já vi prompt grátis."</b>Prompt genérico existe aos montes. Estes foram escritos para a estética, a partir de anúncios reais.</div>
+      <div><b>"E se não funcionar?"</b>Você tem 7 dias para pedir 100% de volta. O risco fica com a gente.</div>
+      <div><b>"E o meu conselho?"</b>O kit traz checklist e um prompt revisor. A decisão final é sempre sua.</div>
+    </div>
+    <div class="cta-bloco" style="text-align:center"><a class="cta" href="#preco" data-checkout data-final>Começar hoje com o kit</a><p class="pequeno">O PDF chega no seu e-mail</p></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap estreito">
+    <h2>Perguntas frequentes</h2>
+    <details><summary>Preciso pagar o ChatGPT?</summary><p>Não. Os prompts funcionam nas versões grátis do ChatGPT, do Claude e do Gemini. A versão paga responde mais rápido, mas não é necessária.</p></details>
+    <details><summary>Como e quando recebo o kit?</summary><p>Assim que o pagamento é aprovado, o PDF chega no e-mail da compra. No Pix costuma levar poucos minutos. Se não chegar, confira o spam ou escreva para lucaszone36@gmail.com.</p></details>
+    <details><summary>Serve para a minha área?</summary><p>Sim, se você trabalha com estética. Cada conselho (CRBM, CREFITO e outros) tem regras próprias de publicidade; por isso o kit traz checklist e um prompt revisor. A palavra final é do seu conselho.</p></details>
+    <details><summary>O kit garante clientes ou faturamento?</summary><p>Não. Nenhum material sério pode prometer isso. O kit poupa tempo e organiza a sua divulgação; o resultado depende do seu serviço, da sua oferta e da sua região.</p></details>
+    <details><summary>Consigo usar pelo celular?</summary><p>Sim. O PDF abre no celular, e ChatGPT, Claude e Gemini têm aplicativo grátis.</p></details>
+    <details><summary>O conteúdo foi feito com inteligência artificial?</summary><p>Foi criado com apoio de inteligência artificial e revisado por pessoas. Quando usar os prompts, revise o texto e, se usar voz ou rosto gerados por IA, avise no post.</p></details>
+    <details><summary>E se eu me arrepender?</summary><p>Você tem 7 dias, a contar da compra, para pedir 100% do valor de volta, sem justificar, pela Kiwify ou pelo e-mail.</p></details>
+  </div>
+</section>
+
+<section class="final" id="final">
+  <div class="wrap estreito">
+    <h2>Amanhã você vai abrir o Instagram de novo. Que seja com o post pronto.</h2>
+    <p class="leve">40 prompts, 10 roteiros de Reels, calendário de 30 dias e checklist. <span data-preco-curto>R$ 37 até 31/10</span>, com 7 dias para pedir o dinheiro de volta.</p>
+    <div class="cta-bloco"><a class="cta grande" href="#preco" data-checkout data-final>Quero meu kit agora</a><p class="pequeno">Acesso na hora · Pix ou cartão · Garantia de 7 dias</p></div>
+    <p class="ps"><b>P.S.:</b> Se você leu até aqui, a divulgação provavelmente já te tira o sono. O kit não faz milagre: ele tira a tela em branco do caminho. Se não servir, os 7 dias estão aí.</p>
+  </div>
+</section>
+
+</main>
+<footer>
+  <div class="wrap">
+    <p>Conteúdo criado com apoio de inteligência artificial e revisado por pessoas. Este material não substitui as orientações do seu conselho profissional. Não prometemos resultados de vendas, de clientes ou estéticos. Dados da análise: anúncios públicos e ativos consultados na Biblioteca de Anúncios da Meta em 19/10/2026. Este site não é da Meta nem do Facebook e não é endossado por essas empresas. Imagens ilustrativas geradas com IA.</p>
+    <p>Venda intermediada pela Kiwify: os dados completos do vendedor (nome e documento) aparecem no checkout, antes do pagamento. Responsável: Lucas · contato: <a href="mailto:lucaszone36@gmail.com">lucaszone36@gmail.com</a> · <a href="privacidade.html">Política de privacidade</a> · <a href="termos.html">Termos de uso</a></p>
+  </div>
+</footer>
+
+<div class="fixa" id="fixa" aria-hidden="true">
+  <div class="p"><span data-preco>R$ 37</span><small data-lancamento>até 31/10</small></div>
+  <a class="cta" href="#preco" data-checkout data-final tabindex="-1">Quero o kit</a>
+</div>
+
+<script>
+// Links de checkout da Kiwify: preencher depois de criar o produto (o de R$ 47 vale a partir de 01/11/2026 00h00, horário de Brasília).
+const CHECKOUT_37 = "CHECKOUT_37";
+const CHECKOUT_47 = "CHECKOUT_47";
+const VIRADA = new Date("2026-11-01T00:00:00-03:00");
+const lancamento = new Date() < VIRADA;
+const checkout = lancamento ? CHECKOUT_37 : CHECKOUT_47;
+const preco = lancamento ? "R$ 37" : "R$ 47";
+document.querySelectorAll("[data-preco]").forEach(e => e.textContent = preco);
+document.querySelectorAll("[data-preco-curto]").forEach(e => e.textContent = lancamento ? "R$ 37 até 31/10" : "R$ 47");
+if (!lancamento) {
+  document.querySelectorAll("[data-lancamento]").forEach(e => e.remove());
+  document.querySelectorAll("[data-riscado]").forEach(e => { e.classList.remove("riscado"); e.textContent = "R$ 47"; });
+  document.querySelectorAll(".cta").forEach(b => { if (/lançamento/.test(b.textContent)) b.textContent = "Quero o kit agora"; });
+}
+// Todo botão leva direto ao checkout quando o link existir; antes disso, leva ao bloco de preço.
+const linkPronto = !/^CHECKOUT_/.test(checkout);
+document.querySelectorAll("[data-checkout]").forEach(b => {
+  b.href = linkPronto ? checkout : "#preco";
+  b.addEventListener("click", () => { if (!linkPronto) return; b.setAttribute("aria-busy", "true"); b.dataset.txt = b.textContent; b.textContent = "Abrindo o checkout…"; setTimeout(() => { b.removeAttribute("aria-busy"); b.textContent = b.dataset.txt; }, 2000); });
+});
+// Calculadora: a leitora digita o valor da própria hora; nada é pré-preenchido.
+const hora = document.getElementById("hora"), saida = document.getElementById("calc-saida");
+hora.addEventListener("input", () => {
+  const v = Number(hora.value);
+  saida.textContent = v > 0 ? `Fazer tudo do zero custaria cerca de ${(31 * v).toLocaleString("pt-BR", {style: "currency", currency: "BRL", maximumFractionDigits: 0})} do seu tempo. O kit custa ${preco}.` : "Digite o valor da sua hora para ver a conta.";
+});
+// Barra fixa no celular: aparece quando o botão do topo sai da tela e some quando o bloco de preço aparece.
+const fixa = document.getElementById("fixa"); let foraHero = false, noPreco = false;
+const atualiza = () => { const on = foraHero && !noPreco; fixa.classList.toggle("on", on); fixa.setAttribute("aria-hidden", String(!on)); fixa.querySelector("a").tabIndex = on ? 0 : -1; };
+new IntersectionObserver(([e]) => { foraHero = !e.isIntersecting && e.boundingClientRect.top < 0; atualiza(); }).observe(document.getElementById("cta-hero"));
+const alvos = new Set(); const obsPreco = new IntersectionObserver(es => { es.forEach(e => e.isIntersecting ? alvos.add(e.target) : alvos.delete(e.target)); noPreco = alvos.size > 0; atualiza(); });
+["preco", "final"].forEach(id => obsPreco.observe(document.getElementById(id)));
+</script>
+</body>
+</html>
