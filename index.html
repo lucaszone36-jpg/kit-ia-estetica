@@ -466,5 +466,6 @@ new IntersectionObserver(([e]) => { foraHero = !e.isIntersecting && e.boundingCl
 const alvos = new Set(); const obsPreco = new IntersectionObserver(es => { es.forEach(e => e.isIntersecting ? alvos.add(e.target) : alvos.delete(e.target)); noPreco = alvos.size > 0; atualiza(); });
 ["preco", "final"].forEach(id => obsPreco.observe(document.getElementById(id)));
 </script>
+<script>/* repassa UTM e fbclid do anuncio para o checkout da Kiwify (atribuicao da venda) */(function(){var q=new URLSearchParams(location.search),p=[];["utm_source","utm_medium","utm_campaign","utm_content","utm_term","fbclid"].forEach(function(n){var v=q.get(n);if(v)p.push(n+"="+encodeURIComponent(v))});if(!p.length)return;document.querySelectorAll('a[href*="pay.kiwify.com.br"]').forEach(function(a){a.href+=(a.href.indexOf("?")<0?"?":"&")+p.join("&")})})();</script>
 </body>
 </html>
