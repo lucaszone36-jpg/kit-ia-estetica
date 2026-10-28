@@ -86,7 +86,7 @@ p{margin:0 0 14px}
 .passo h3 span{display:inline-grid;place-items:center;width:28px;height:28px;border-radius:50%;background:var(--argila);color:#fff;font-size:14px;margin-right:8px}
 pre{background:#fff;border:1px solid var(--linha);border-left:4px solid var(--salvia);border-radius:12px;padding:14px 16px;font:14px/1.55 Consolas,"Cascadia Mono",monospace;white-space:pre-wrap;overflow-wrap:anywhere;margin:0}
 .resposta{background:var(--salvia-clara);border-radius:12px;padding:14px 18px;font-style:italic}
-.demo-img{border-radius:22px;box-shadow:var(--sombra);position:sticky;top:24px;width:100%;height:auto}
+.demo-img{border-radius:22px;box-shadow:var(--sombra);width:100%;height:auto}.fig-ia{margin:0;min-width:0}.fig-ia figcaption{font-size:13px;color:var(--suave,#6b5f58);margin-top:8px;text-align:center}.demo-fig{position:sticky;top:24px}
 
 /* Conteúdo */
 .tabela{width:100%;border-collapse:collapse;background:#fff;border-radius:var(--raio);overflow:hidden;box-shadow:0 1px 0 var(--linha)}
@@ -171,7 +171,7 @@ footer a{color:var(--suave)}
   .hero .grade,.demo .grade,.bonus .grade{grid-template-columns:1fr;gap:28px}
   .prova ul{grid-template-columns:repeat(2,1fr)}.prova li:first-child{grid-column:1/-1}
   .dia,.padroes,.obj,.pq{grid-template-columns:1fr}
-  .demo-img{position:static}
+  .demo-fig{position:static}
   .comp{font-size:14px;table-layout:fixed}.comp th,.comp td{padding:10px 6px;overflow-wrap:anywhere}.comp thead th{font-size:16px}
   .garantia .caixa{grid-template-columns:1fr;text-align:center;justify-items:center;padding:26px}
   .cta{width:100%}
@@ -190,8 +190,8 @@ footer a{color:var(--suave)}
   <div class="wrap grade">
     <div>
       <span class="selo-topo">Para esteticistas, biomédicas estetas, fisios dermatofuncionais e donas de clínica</span>
-      <h1>Pare de travar na frente do celular. Seus posts, anúncios e respostas de WhatsApp saem prontos em minutos.</h1>
-      <p class="sub">40 prompts escritos para quem trabalha com estética, 10 roteiros de Reels e um calendário de 30 dias. Copie, cole no ChatGPT, no Claude ou no Gemini (funciona até na versão grátis) e publique.</p>
+      <h1>O post de amanhã pronto em minutos, com 40 prompts feitos para estética</h1>
+      <p class="sub">Anúncios, posts, respostas de WhatsApp, 10 roteiros de Reels e um calendário de 30 dias. Copie, cole no ChatGPT, no Claude ou no Gemini (funciona até na versão grátis) e revise antes de publicar.</p>
       <div class="cta-bloco">
         <a class="cta" href="#preco" data-checkout id="cta-hero">Quero meu kit por<span data-preco>R$ 37</span></a>
         <p class="pequeno">Acesso imediato pela área de membros · Pix ou cartão · 7 dias para pedir o dinheiro de volta</p>
@@ -202,7 +202,7 @@ footer a{color:var(--suave)}
         <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l7 3v6c0 4-3 7-7 9-4-2-7-5-7-9V6z"/></svg>Garantia de 7 dias</li>
       </ul>
     </div>
-    <img class="hero-img" src="img/hero.webp" width="1168" height="880" alt="Capa do Kit IA para Estética em um tablet e uma página do kit aberta no celular" fetchpriority="high">
+    <figure class="fig-ia"><img class="hero-img" src="img/hero.webp" width="1168" height="880" alt="Capa do Kit IA para Estética em um tablet e uma página do kit aberta no celular" fetchpriority="high"><figcaption>Imagem ilustrativa gerada com IA.</figcaption></figure>
   </div>
 </header>
 
@@ -210,12 +210,12 @@ footer a{color:var(--suave)}
   <div class="wrap">
     <ul>
       <li><b>428</b><span>anúncios de estética lidos na Biblioteca da Meta</span></li>
-      <li><b>50</b><span>clínicas de Curitiba analisadas uma a uma</span></li>
+      <li><b>50</b><span>clínicas analisadas uma a uma</span></li>
       <li><b>40</b><span>prompts prontos</span></li>
       <li><b>10</b><span>roteiros de Reels</span></li>
       <li><b>30</b><span>dias de calendário</span></li>
     </ul>
-    <p class="pequeno">Anúncios públicos e ativos, consultados em 19/10/2026. A Biblioteca de Anúncios da Meta é aberta: qualquer pessoa pode conferir.</p>
+    <p class="pequeno">Amostra: anúncios públicos e ativos de clínicas de Curitiba, consultados em 19/10/2026 na Biblioteca de Anúncios da Meta (aberta: qualquer pessoa pode conferir). Os prompts não dependem da cidade: você coloca o seu bairro na ficha da clínica.</p>
   </div>
 </div>
 
@@ -267,7 +267,7 @@ Não prometa resultado. Marque os 3 mais fortes e explique por quê.</pre></div>
       <p><b>São 40 prompts assim, cada um feito para uma situação da sua semana.</b></p>
       <div class="cta-bloco"><a class="cta" href="#preco" data-checkout>Quero os 40 prompts</a><p class="pequeno">Funciona no ChatGPT grátis</p></div>
     </div>
-    <img class="demo-img" src="img/uso.webp" loading="lazy" width="1168" height="880" alt="Imagem ilustrativa: celular com um assistente de IA escrevendo ganchos para um anúncio de limpeza de pele">
+    <figure class="fig-ia demo-fig"><img class="demo-img" src="img/uso.webp" loading="lazy" width="1168" height="880" alt="Imagem ilustrativa: celular com um assistente de IA escrevendo ganchos para um anúncio de limpeza de pele"><figcaption>Imagem ilustrativa gerada com IA.</figcaption></figure>
   </div>
 </section>
 
@@ -299,7 +299,7 @@ Não prometa resultado. Marque os 3 mais fortes e explique por quê.</pre></div>
 <section class="desejo">
   <div class="wrap">
     <h2>Antes de escrever uma linha, olhamos os anúncios que as clínicas pagam para rodar.</h2>
-    <p class="leve">Lemos 428 anúncios ativos de estética em Curitiba na Biblioteca de Anúncios da Meta e analisamos 50 clínicas uma a uma. Três padrões se repetiram:</p>
+    <p class="leve">Lemos 428 anúncios ativos de estética na Biblioteca de Anúncios da Meta e analisamos uma a uma 50 clínicas, numa amostra de Curitiba. Três padrões se repetiram:</p>
     <div class="padroes">
       <article><div class="num">33<small style="font-size:.45em;color:var(--argila-esc)"> de 50</small></div><h3>sem oferta concreta</h3><p>Falam do procedimento, mas não dão motivo para agendar agora.</p><p class="fix">O prompt 2 monta o anúncio com oferta e prazo reais.</p></article>
       <article><div class="num">32<small style="font-size:.45em;color:var(--argila-esc)"> de 50</small></div><h3>sem preço nem próximo passo</h3><p>A pessoa se interessa e não sabe quanto custa nem o que fazer.</p><p class="fix">Os prompts 8 e 22 escrevem o botão e a resposta para "quanto custa?".</p></article>
@@ -338,7 +338,7 @@ Não prometa resultado. Marque os 3 mais fortes e explique por quê.</pre></div>
       <p>Os padrões que encontramos nas 50 clínicas, num guia curto: quanto tempo os anúncios ficam no ar, o que aparece na oferta, que botões são usados, os erros mais comuns e um checklist de 1 minuto para o seu anúncio. Nenhuma clínica é identificada.</p>
       <p><b>Exclusivo do lançamento:</b> não será vendido separadamente. Quando a 50ª compra entrar, ele sai desta página.</p>
     </div>
-    <img src="img/raiox.webp" loading="lazy" width="1168" height="880" alt="Capa do bônus Raio-X dos anúncios de estética e checklist aberto no tablet" style="border-radius:22px;box-shadow:var(--sombra)">
+    <figure class="fig-ia"><img src="img/raiox.webp" loading="lazy" width="1168" height="880" alt="Capa do bônus Raio-X dos anúncios de estética e checklist aberto no tablet" style="border-radius:22px;box-shadow:var(--sombra)"><figcaption>Imagem ilustrativa gerada com IA.</figcaption></figure>
   </div>
 </section>
 
@@ -465,6 +465,14 @@ const atualiza = () => { const on = foraHero && !noPreco; fixa.classList.toggle(
 new IntersectionObserver(([e]) => { foraHero = !e.isIntersecting && e.boundingClientRect.top < 0; atualiza(); }).observe(document.getElementById("cta-hero"));
 const alvos = new Set(); const obsPreco = new IntersectionObserver(es => { es.forEach(e => e.isIntersecting ? alvos.add(e.target) : alvos.delete(e.target)); noPreco = alvos.size > 0; atualiza(); });
 ["preco", "final"].forEach(id => obsPreco.observe(document.getElementById(id)));
+// Titulo casado com o anuncio (utm_content) e eventos de funil no pixel (nao duplicam o IC da Kiwify).
+const titulos = { KIT_IMPULSIONAMENTO: "Impulsionou e só veio curtida? Revise o anúncio antes de pagar.", KIT_CALENDARIO: "30 dias de posts para a clínica, com o que postar em cada dia" };
+const origem = (new URLSearchParams(location.search).get("utm_content") || "").split("_").slice(0, 2).join("_").toUpperCase();
+if (titulos[origem]) document.querySelector("h1").textContent = titulos[origem];
+if (window.fbq) {
+  document.querySelectorAll("[data-checkout]").forEach(b => b.addEventListener("click", () => fbq("trackCustom", "CliqueComprar")));
+  new IntersectionObserver((es, o) => { if (es[0].isIntersecting) { fbq("trackCustom", "ViuPreco"); o.disconnect(); } }).observe(document.getElementById("preco"));
+}
 </script>
 <script>/* repassa UTM e fbclid do anuncio para o checkout da Kiwify (atribuicao da venda) */(function(){var q=new URLSearchParams(location.search),p=[];["utm_source","utm_medium","utm_campaign","utm_content","utm_term","fbclid"].forEach(function(n){var v=q.get(n);if(v)p.push(n+"="+encodeURIComponent(v))});if(!p.length)return;document.querySelectorAll('a[href*="pay.kiwify.com.br"]').forEach(function(a){a.href+=(a.href.indexOf("?")<0?"?":"&")+p.join("&")})})();</script>
 </body>
